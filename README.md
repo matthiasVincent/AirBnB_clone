@@ -8,7 +8,7 @@
 `Storage engine -> Json file.`
 `Console -> cmd with python library cmd.Cmd`
 
-# Description of the proje
+# Description of the project
 This particular part of the project is the foundation for the full clone of the airbnb web application page(though, not all functionalities in the site is incorporated, it nonetheless incorporates the core functionality of the site).The project uses the python object oriented programming paradigm and necessary library modules which aid greatly in the total abstraction of the storage system(s) for the application making it adapt independently to any storage medium or environment.
 
 # Prerequisites 
