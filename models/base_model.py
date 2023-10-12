@@ -4,22 +4,37 @@
 
 from datetime import datetime
 from uuid import uuid4
+from models import storage
 
 
 class BaseModel:
     """BaseModel class defines a generic attributes and methods for su
     b classes"""
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """instantiate BaseModel class with attributes:
            id: string-assign unique id when an instance is created
            created_at: datetime-assign current datetime when an instan
            ce is created
            updated_at: datetime-assign current datetime when a previou-
            sly created instance is updated
+           args: anonymous positional args, not used
+           kwargs: keyworded arguments, used in
+           creating instance from a dictionary
         """
-        self.id = str(uuid4())
-        self.created_at = datetime.utcnow()
-        self.updated_at = datetime.utcnow()
+        if kwargs:
+            for k, v in kwargs.items():
+                if k == "__class__":
+                    continue
+                elif k in ["created_at", "updated_at"]:
+                    v = datetime.fromisoformat(v)
+                    setattr(self, k, v)
+                else:
+                    setattr(self, k, v)
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.utcnow()
+            self.updated_at = datetime.utcnow()
+            storage.new(self)
 
     def __str__(self):
         """print a human readable representation of the instance in the
@@ -32,6 +47,7 @@ class BaseModel:
         """updates the public instance attribute created_at with the
         current datetime"""
         self.updated_at = datetime.utcnow()
+        storage.save()
 
     def to_dict(self):
         """returns  a dictionary containing all keys/values of __dict__
