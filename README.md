@@ -130,4 +130,4 @@ $ echo "help" | ./console.py
 The program will create a file called: `file.json` whenever you create a new model. It is always created in the same directory as console.py.
 
 
-Coded with ❤️ and 🔨 by: [Anas Hany Hassan] &[Matthias Sunday Oduh](https://github.com/matthiasVincent)
+Coded by: [Matthias Sunday Oduh](https://github.com/matthiasVincent)
