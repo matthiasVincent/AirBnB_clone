@@ -22,7 +22,8 @@
     border: 1px solid #FF5A5F;
     border-radius: 4px;
     display:flex;
-    flex-direction: column;
+    flex-wrap: flex;
+    /*flex-direction: column;*/
     position:relative;
 }
 
