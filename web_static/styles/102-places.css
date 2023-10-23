@@ -13,6 +13,7 @@
 .art-wrap{
     display:flex;
     flex-wrap:wrap;
+    justify-content: space-between;
 }
 
 .places article{
@@ -176,12 +177,12 @@
     }
 }
 
-@media screen and (min-width:400px) and (max-width:800px){
+@media screen and (min-width:400px) and (max-width:961px){
     .places article{
         margin:0;
         padding:20px;
         margin-bottom: 20px;
-        width:290px;
+        width:320px;
         overflow-x: hidden;
     }
     .places article h2{
@@ -191,8 +192,8 @@
     .price_by_night{
         border: 2px solid #FF5A5F;
         padding: 5px;
-        min-width: 40px;
-        height: 40px;
+        min-width: 45px;
+        height: 45px;
         display:flex;
         align-items:center;
         justify-content:center;
