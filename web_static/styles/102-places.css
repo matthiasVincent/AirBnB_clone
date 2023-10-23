@@ -18,7 +18,7 @@
 
 .places article{
     padding:20px;
-    width: 390px;
+    /*width: 390px;*/
     /*margin:20px;*/
     border: 1px solid #FF5A5F;
     border-radius: 4px;
@@ -182,7 +182,7 @@
         margin:0;
         padding:20px;
         margin-bottom: 20px;
-        width:320px;
+        /*width:320px;*/
         overflow-x: hidden;
     }
     .places article h2{
