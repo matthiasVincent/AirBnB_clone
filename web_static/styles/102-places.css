@@ -17,7 +17,7 @@
 
 .places article{
     padding:20px;
-    width: 25%;
+    width: 390px;
     margin:20px;
     border: 1px solid #FF5A5F;
     border-radius: 4px;
@@ -144,7 +144,7 @@
 
 /* for responsiveness */
 
-@media screen and (max-width:700px){
+@media screen and (max-width:400px){
     .places article{
         margin:0;
         padding:20px;
@@ -175,3 +175,30 @@
         height:40px;
     }
 }
+
+@media screen and (min-width:400px) and (max-width:800px){
+    .places article{
+        margin:0;
+        padding:20px;
+        margin-bottom: 20px;
+        width:290px;
+        overflow-x: hidden;
+    }
+    .places article h2{
+        font-size : 20px;
+    }
+
+    .price_by_night{
+        border: 2px solid #FF5A5F;
+        padding: 5px;
+        min-width: 40px;
+        height: 40px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+    }
+    .price_by_night p{
+        font-size: 18px;
+    }
+    }
