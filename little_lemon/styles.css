@@ -1,4 +1,5 @@
 /* general styles */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +7,6 @@
 }
 
 body{
-    /*background-image: url('./images/img4.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;*/
     font-size: 14px;
     background-color: rgba(5, 5, 5, 0);
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -60,6 +58,7 @@ nav .navs ul li{
 }
 
 /* main content */
+
 main{
     padding: 10px 15px;
     height: 80%;
@@ -112,16 +111,6 @@ main .wrapper .banner .hov p{
     font-weight: 400;
 }
 
-/*main .wrapper .banner h3{
-    padding: 15px 0;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-main .wrapper .banner p{
-    font-weight: 400;
-}*/
-
 main .wrapper .art-wrap{
     display: flex;
     justify-content: space-between;
@@ -138,7 +127,6 @@ main .wrapper .art-wrap .art{
 main .wrapper .art-wrap .art:hover{
     transform: scale(1.1);
     transition: all 1s ease-in;
-    /*margin: 40px 0;*/
 }
 
 main .wrapper .art-wrap .art h2{
